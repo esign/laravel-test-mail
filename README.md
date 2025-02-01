@@ -4,7 +4,8 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/esign/laravel-test-mail.svg?style=flat-square)](https://packagist.org/packages/esign/laravel-test-mail)
 ![GitHub Actions](https://github.com/esign/laravel-test-mail/actions/workflows/main.yml/badge.svg)
 
-A short intro about the package.
+This package provides a simple command to send test emails, allowing you to verify your mail setup in a Laravel application.
+It supports both immediate sending and queueing of test emails.
 
 ## Installation
 
@@ -14,14 +15,22 @@ You can install the package via composer:
 composer require esign/laravel-test-mail
 ```
 
-The package will automatically register a service provider.
+## Usage
 
-Next up, you can publish the configuration file:
+### Sending a Test Mail
+You can use the `mail:test` command to send a test mail to a specified recipient:
+
 ```bash
-php artisan vendor:publish --provider="Esign\TestMail\TestMailServiceProvider" --tag="config"
+php artisan mail:test hello@example.com
 ```
 
-## Usage
+### Queueing a Test Mail
+
+If you want to queue the test mail instead of sending it immediately, you can use the `--queue` option:
+
+```bash
+php artisan mail:test hello@example.com --queue
+```
 
 ### Testing
 
