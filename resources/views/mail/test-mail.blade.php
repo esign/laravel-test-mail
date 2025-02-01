@@ -1,0 +1,1 @@
+Test mail from {{ config('app.name') }}.

@@ -1,6 +1,6 @@
 {
     "name": "esign/laravel-test-mail",
-    "description": "Send test emails to verify your mail setup in Laravel.",
+    "description": "Send test mails to verify your mail setup in Laravel.",
     "keywords": [
         "esign",
         "test-mail"

@@ -1,4 +1,4 @@
-# Send test emails to verify your mail setup in Laravel.
+# Send test mails to verify your mail setup in Laravel.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/esign/laravel-test-mail.svg?style=flat-square)](https://packagist.org/packages/esign/laravel-test-mail)
 [![Total Downloads](https://img.shields.io/packagist/dt/esign/laravel-test-mail.svg?style=flat-square)](https://packagist.org/packages/esign/laravel-test-mail)
