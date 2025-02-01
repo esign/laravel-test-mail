@@ -17,6 +17,8 @@
     ],
     "require": {
         "php": "^8.0",
+        "illuminate/console": "^10.0|^11.0",
+        "illuminate/mail": "^10.0|^11.0",
         "illuminate/support": "^10.0|^11.0"
     },
     "require-dev": {
@@ -45,10 +47,7 @@
         "laravel": {
             "providers": [
                 "Esign\\TestMail\\TestMailServiceProvider"
-            ],
-            "aliases": {
-                "TestMail": "Esign\\TestMail\\Facades\\TestMailFacade"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
