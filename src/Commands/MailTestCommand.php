@@ -17,7 +17,7 @@ class MailTestCommand extends Command
         $queue = (bool) $this->option('queue');
 
         $mailable = (new TestMail())->to($recipient);
-        $queue ? Mail::queue($mailable) : Mail::sendNow($mailable);
+        $queue ? Mail::queue($mailable) : Mail::send($mailable);
 
         $message = sprintf(
             'Test mail has been %s to %s',
