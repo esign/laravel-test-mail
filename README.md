@@ -1,8 +1,8 @@
-# :package_description
+# Send test emails to verify your mail setup in Laravel.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor/:package_slug)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor/:package_slug)
-![GitHub Actions](https://github.com/:vendor/:package_slug/actions/workflows/main.yml/badge.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/esign/laravel-test-mail.svg?style=flat-square)](https://packagist.org/packages/esign/laravel-test-mail)
+[![Total Downloads](https://img.shields.io/packagist/dt/esign/laravel-test-mail.svg?style=flat-square)](https://packagist.org/packages/esign/laravel-test-mail)
+![GitHub Actions](https://github.com/esign/laravel-test-mail/actions/workflows/main.yml/badge.svg)
 
 A short intro about the package.
 
@@ -11,14 +11,14 @@ A short intro about the package.
 You can install the package via composer:
 
 ```bash
-composer require :vendor/:package_slug
+composer require esign/laravel-test-mail
 ```
 
 The package will automatically register a service provider.
 
 Next up, you can publish the configuration file:
 ```bash
-php artisan vendor:publish --provider=":vendor_namespace\:studly_package_nameServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Esign\TestMail\TestMailServiceProvider" --tag="config"
 ```
 
 ## Usage
