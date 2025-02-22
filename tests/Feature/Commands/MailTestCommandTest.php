@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Mail;
 use PHPUnit\Framework\Attributes\Test;
 
-class MailTestCommandTest extends TestCase
+final class MailTestCommandTest extends TestCase
 {
     protected function setUp(): void
     {
